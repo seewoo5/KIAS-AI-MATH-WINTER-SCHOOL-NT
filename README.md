@@ -1,0 +1,81 @@
+# Machine Learning and Number Theory
+
+This is a repository for the number theory group of  [KIAS Winter School on Mathematics and AI](https://chlee-0.github.io/2025-KIAS-Winter-School-Math-AI/).
+It contains multiple jupyter notebooks which guide you to learn how simple machine learning algorithms can be used to predict wide range of number-theoretic invariants.
+
+# Setup
+
+## Requirements
+
+- Python
+    - lmfdb-lite
+    - matplotlib
+    - numpy
+    - polars
+    - sklearn
+    - tqdm
+- SageMath
+
+To use the python packages "inside" SageMath shell,
+
+1. Open Sage shell in terminal as
+
+    ```sh
+    sage --sh
+    ```
+
+2. Use `pip3` to install the packages. If you are using MacOS, you need to install `polars-lts-cpu`.
+
+    ```sh
+    pip3 install -U "lmfdb-lite[pgbinary] @ git+https://github.com/roed314/lmfdb-lite.git"
+    pip3 install matplotlib numpy polars-lts-cpu scikit-learn tqdm
+    ```
+
+3. Exit the Sage shell.
+
+    ```sh
+    exit
+    ```
+
+4. Now you can use these libraries in Sage as:
+
+    ```
+    $ sage
+    ┌────────────────────────────────────────────────────────────────────┐
+    │ SageMath version 10.6, Release Date: 2025-03-31                    │
+    │ Using Python 3.12.5. Type "help()" for help.                       │
+    └────────────────────────────────────────────────────────────────────┘
+    sage: import polars as pl
+    sage: df = pl.DataFrame()
+    sage: df
+    shape: (0, 0)
+    ┌┐
+    ╞╡
+    └┘
+    ```
+
+# Problem Set 0: Machine Learning Basics
+
+See `pset0_ml_basic.ipynb`.
+This is a notebook for learning the basics of machine learning, focused on logistic regression and decision tree.
+Feel free to skip if you are familiar with scikit-learn library.
+
+# Problem Set 1: Predict the rank of elliptic curves
+
+See `pset1_ec_rank.ipynb`.
+This is a notebook for reproducing the experiments by Yang-Hui He, Kyu-Hwan Lee, Thomas Oliver, and Alexey Podznyakov on predicting ranks of elliptic curves.
+
+References:
+
+- Yang-Hui He, Kyu-Hwan Lee, Thomas Oliver, "Machine learning invariants of arithmetic curves", Journal of Symbolic Computation, 2023
+- Yang-Hui He, Kyu-Hwan Lee, Thomas Oliver, Alexey Podznyakov, "Murmuration of Elliptic Curves", Experimental Mathematics, 2024
+
+# Problem Set 2: Predict invariants of number fields
+
+See `pset2_nf.ipynb`.
+This is a notebook for reproducing the experiments by Yang-Hui He, Kyu-Hwan Lee, and Thomas Oliver on predicting signature and Galois group of number fields.
+
+Reference:
+- Yang-Hui He, Kyu-Hwan Lee, Thomas Oliver, "Machine-learning number fields", Mathmatics, Computation and Geometry of Data, 2022
+
+- Kyu-Hwan Lee, Seewoo Lee, "Machines Learn Number Fields, But How? The Case of Galois Groups", preprint
