@@ -1,22 +1,25 @@
 # Machine Learning and Number Theory
 
 This is a repository for the number theory group of  [KIAS Winter School on Mathematics and AI](https://chlee-0.github.io/2025-KIAS-Winter-School-Math-AI/).
-It contains multiple jupyter notebooks which guide you to learn how simple machine learning algorithms can be used to predict wide range of number-theoretic invariants.
+It contains tutorials which guide you to learn how simple machine learning algorithms can be used to predict wide range of number-theoretic invariants.
 
 # Setup
 
 ## Requirements
 
 - Python
-    - lmfdb-lite
-    - matplotlib
-    - numpy
-    - polars
-    - sklearn
-    - tqdm
-- SageMath
+    - [lmfdb-lite](https://github.com/roed314/lmfdb-lite)
+    - [matplotlib](https://matplotlib.org/)
+    - [numpy](https://numpy.org/)
+    - [polars](https://pola.rs/)
+    - [sklearn](https://scikit-learn.org/stable/)
+    - [tqdm](https://tqdm.github.io/)
+- [SageMath](https://www.sagemath.org/)
 
-To use the python packages "inside" SageMath shell,
+## Installation
+
+First, install SageMath.
+To use the python packages "inside" SageMath shell:
 
 1. Open Sage shell in terminal as
 
@@ -54,11 +57,13 @@ To use the python packages "inside" SageMath shell,
     └┘
     ```
 
+When running Jupyter notebooks, use SageMath kernel instead of Python kernel.
+
 # Problem Set 0: Machine Learning Basics
 
-See `pset0_ml_basic.ipynb`.
-This is a notebook for learning the basics of machine learning, focused on logistic regression and decision tree.
-Feel free to skip if you are familiar with scikit-learn library.
+For the basics of machine learning, follow [this scikit-learn tutorial](https://www.geeksforgeeks.org/machine-learning/learning-model-building-scikit-learn-python-machine-learning-library/) on iris dataset.
+In particular, use logistic regression and decision tree to solve the classification problem.
+You can skip this part if you are already familiar with the scikit-learn library.
 
 # Problem Set 1: Predict the rank of elliptic curves
 
