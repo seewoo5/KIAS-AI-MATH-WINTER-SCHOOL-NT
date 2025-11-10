@@ -65,7 +65,7 @@ For the basics of machine learning, follow [this scikit-learn tutorial](https://
 In particular, use logistic regression and decision tree to solve the classification problem.
 You can skip this part if you are already familiar with the scikit-learn library.
 
-# Problem Set 1: Predict the ranks and the torsion subgroups of elliptic curves
+# Problem Set 1: Predict invariants of elliptic curves
 
 See `pset1_ec.ipynb`.
 This is a notebook for reproducing the experiments by Yang-Hui He, Kyu-Hwan Lee, Thomas Oliver, and Alexey Podznyakov on predicting the ranks and the torsion subgroups of elliptic curves.
