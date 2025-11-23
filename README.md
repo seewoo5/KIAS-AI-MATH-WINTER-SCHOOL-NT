@@ -84,3 +84,8 @@ Reference:
 - Yang-Hui He, Kyu-Hwan Lee, Thomas Oliver, "Machine-learning number fields", Mathmatics, Computation and Geometry of Data, 2022
 
 - Kyu-Hwan Lee, Seewoo Lee, "Machines Learn Number Fields, But How? The Case of Galois Groups", preprint
+
+# Problem Set 3: Use `lmfdb-lite` to query other data
+
+See `pset3_db.ipynb`.
+This is a notebook for querying data of Artin representations and abelian varieties over finite fields from LMFDB, using [`lmfdb-lite`](https://github.com/roed314/lmfdb-lite).
