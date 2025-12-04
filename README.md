@@ -95,4 +95,4 @@ This is a notebook for querying data of Artin representations and abelian variet
 Our team's final project is to solve various classification problems on Aritn representations and abelian varieties over finite fields. Slides can be found [here](./project.pdf).
 Codes may available upon request.
 
-Team members: Dohoon Choi, Keunyoung Jeong, Jaehak Yi, Minseo Shin, Euntaek Lee, Taeyoung Lee, Seewoo Lee
+Team members: Dohoon Choi, Keunyoung Jeong, Jaehak Yi, Minseo Shin, Euntaek Lee, Taeyoung Kim, Seewoo Lee
